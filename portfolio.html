@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faisal Khan Portfolio</title>
+ <link rel="stylesheet" href="https://fonts.google.com/share#how-to-use?selection.family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900">   
+      <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+body{
+    background-color: rgb(5, 13, 77);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    height: 60px;
+    background-color: rgb(12, 9, 54);
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 23px;
+}
+nav ul li a{
+   text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{
+   font-size: 1.05rem;
+    color: rgb(92, 92, 142);
+    font-size: 1.01rem;
+
+}
+.left{
+    font-size: 1.5rem;
+}
+.firstsection{
+        display: flex;
+        justify-content: space-around ;
+        align-items: center;
+
+    }
+    .firstsection > div{
+        width: 30%;
+       
+    }
+    .leftsection{
+        margin: 70px 0;
+       font-size: 2rem;
+    }
+    .rightsection img{
+        width: 60%;
+        margin: 25px 0;
+    }
+    .purple{
+        color: rgb(128, 22, 228);
+    }
+    .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+ background-color: rgb(12, 9, 54);
+  color: white;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdowncontent {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+ 
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+ 
+}
+
+.dropdowncontent a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdowncontent a:hover {
+  background-color: #08326f;
+}
+
+.dropdown:hover .dropdowncontent {
+  display: block;
+}
+main hr{
+    border: 0;
+    background: palevioletred;
+    height: 1.2px;
+    margin: 40px 85px;
+    justify-content: center;
+}
+
+
+      </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Mohammed Faisal Khan Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home </a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><div class="dropdown">
+                        <button class="dropbtn">Contact Me</button>
+                        <div class="dropdowncontent">
+                          <a href="https://github.com/mdfaiskhan">Github</a>
+                          <a href="https://www.linkedin.com/in/mohammed-faisal-khan-911a01245/">Telegram</a>
+                          <a href="https://twitter.com/Mdfaisal2611">Twitter</a>
+                        </div>
+                      </div>
+                      
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">Hi , My Name is <span class="purple">Mohammed Faisal Khan</span>
+                 <div>and I am a Passionate </div>
+                
+                 <span id="element"></span>
+                 <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+                  </div>
+            <div class="rightsection">
+                <img src="113.png" alt="">
+            </div>
+        </section>
+
+    </main>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Mern Stack ', 'Web Developer'],
+          typeSpeed: 50,
+        });
+      </script>
+      <hr>
+        <section class="section">
+            <div class="section-content">
+                <h2 class="section-title">Skills</h2>
+                <div class="skills-list">
+                    <div class="skill">HTML</div>
+                    <div class="skill">CSS</div>
+                    <div class="skill">JavaScript</div>
+                    <div class="skill">React</div>
+                    <div class="skill">Node.js</div>
+                    <div class="skill">MongoDB</div>
+                </div>
+            </div>
+        </section>
+
+      </section>
+</body>
+</html>

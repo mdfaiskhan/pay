@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammed Faisal Khan - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #0a192f;
+            color: #fff;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #020c1b;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            top: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 0px;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        nav ul {
+            padding: 1px;
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #66FCF1;
+        }
+        .main-content {
+            padding-top: 100px;
+            text-align: center;
+        }
+        .section {
+            padding: 0px 0;
+        }
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: #66FCF1;
+        }
+        .section-content-main {
+            max-width: 800px;
+            margin: 0 auto;
+            background-image: url(113.png);
+            height: 400px;
+        }
+        .section-content-main {
+            max-width: 800px;
+            margin: 0 auto;
+            background-image: url(113.png);
+            height: 400px;
+        }
+        .skills-list, .education-list, .project-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding-top: 20px;
+        }
+        .skill, .education-item, .project-item {
+            background-color: #1F2833;
+            padding: 15px 20px;
+            border-radius: 8px;
+            color: #66FCF1;
+            text-align: center;
+            flex: 0 0 calc(50% - 20px);
+            max-width: calc(50% - 20px);
+        }
+        .contact-form {
+            background-color: #1F2833;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+        .contact-form input[type="submit"] {
+            background-color: #66FCF1;
+            color: #0a192f;
+            border: none;
+            border-radius: 5px;
+            padding: 12px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .contact-form input[type="submit"]:hover {
+            background-color: #45A29E;
+        }
+
+        @media screen and (max-width: 768px) {
+            nav ul {
+                justify-content: center;
+            }
+            nav ul li {
+                margin-left: 10px;
+            }
+            .skills-list, .education-list, .project-list {
+                flex-direction: column;
+                justify-content: center;
+            }
+            .skill, .education-item, .project-item {
+                max-width: 100%;
+                flex: 0 0 calc(100% - 20px);
+                justify-content: center;
+            }
+            .main-content img{
+        width: 60%;
+        margin: 20px 0;
+    }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">My Portfolio</div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <div class="container">
+            <section id="home" class="section">
+                <div  class="section-content-main-top">
+                    <h1 >Mohammed Faisal Khan</h1>
+                    <p class="section-description">I am a passionate MERN Stack Web Developer.</p>
+                </div>
+                <br>
+                <div class="section-content-main">
+                </div>
+            </section>
+<br><br><br>
+         
+            <section id="skills" class="section">
+                <div class="section-content">
+                    <h2 class="section-title">Skills</h2>
+                    <div class="skills-list">
+                        <div class="skill">HTML</div>
+                        <div class="skill">CSS</div>
+                        <div class="skill">JavaScript</div>
+                        <div class="skill">React</div>
+                        <div class="skill">Node.js</div>
+                        <div class="skill">MongoDB</div>
+                        
+                    </div>
+                </div>
+            </section>
+
+            <br>
+            <section id="education" class="section">
+                <div class="section-content">
+                    <h2 class="section-title">Education</h2>
+                    <div class="education-list">
+                        <div class="education-item">
+                            <h3>Bachelor's Degree in Computer Science</h3>
+                            <p>HKBK College of Engineering, 2023</p>
+                        </div>
+                       
+                    </div>
+                </div>
+            </section>
+
+            <br>
+            <section id="projects" class="section">
+                <div class="section-content">
+                    <h2 class="section-title">Projects</h2>
+                    <div class="project-list">
+                        <div class="project-item">
+                            <h3>Heart Disease Prediction using Machine Learning </h3>
+                            <p>Proficient in event scheduling and coordination within the EventMaster team, utilizing advanced software tools for precise planning and execution.
+                              Applied expertise in managing events with precision, overseeing timelines, and coordinating logistics to consistently meet or exceed client expectations.
+                               Utilized advanced software tools effectively, showcasing problem-solving skills and maintaining adaptability for seamless event outcomes and participant experiences."</p>
+                        </div>
+                        <div class="project-item">
+                            <h3>Event Management System</h3>
+                            <p>Developed HeartGuard Pro, an innovative heart disease prediction model using advanced linear regression for heightened accuracy. Applied cutting-edge approaches to elevate project outcomes, demonstrating a commitment to pushing the boundaries of conventional methods in cardiovascular health prediction. Collaborated seamlessly, effectively communicating project results and insights, contributing significantly to the field of cardiovascular health.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            
+            <section id="contact" class="section">
+                <div class="section-content">
+                    <h2 class="section-title">Contact Me</h2>
+                    <div class="contact-form-container">
+                        <form class="contact-form" action="#" method="post">
+                            <input type="text" name="name" placeholder="Your Name">
+                            <input type="email" name="email" placeholder="Your Email">
+                            <textarea name="message" placeholder="Your Message"></textarea>
+                            <input type="submit" value="Send Message">
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

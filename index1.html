@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="ex.css">
+</head>
+
+<body class="png">
+   <header class="abcd"><center><h1>Mohammed Faisal Khan</h1></center></header>
+    
+   <button onclick="scrollToAbout()">About Me</button>
+    <button onclick="scrollToskills()">skills</button>
+    <button onclick="scrollToProjects()">Projects</button>
+    <button onclick="scrollToexperience()">Experience</button>
+    <button onclick="scrollToContact()">Contact Me</button>
+    
+    
+    <div class="hghg" >
+        <section>
+        <h2 id="asdf" >About Me</h2>
+        <p>Just graduated with a super official Bachelor of Engineering degree – because who doesn't love a good scroll-stopper on LinkedIn, right? 👨‍🎓 Passionate about turning wild ideas into code reality using my Java, Python, React, Django Framework, Javascript, SQL, Bootstrap, Dart, and more wizardry. If it's tech, I probably dabble in it! 👨‍💻 Recently survived the academic jungle and emerged as a Front End Intern at ICsoln Technologies. Picture me conquering Front End Development challenges with my keyboard as my sword and my IDE as my shield! My heart beats for full-stack web development, mobile app sorcery, and the mystical realms of Data Science. Ready to sprinkle some fresh coding magic on real-world projects! ✨</p>
+        <p>Here's My Resume Link: <a href="https://drive.google.com/file/d/18wrfB3YcedsNPr3HJH3JNL55we-3ukW-/view?usp=drive_link">RESUME</a></p>
+    </div>
+    </section>
+    
+
+
+    <article id="qwerty">
+    <div id="skills">
+        
+        <h2>skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>Java</li>
+        </ul> 
+    </div>
+    </article>
+    <hr>
+
+   
+   
+    <div id="projects" class="projects">
+        <h2>Projects</h2> 
+        <table border="1">  <tr id="p1">     
+        <th> <h3 id=>Project 1: Heart Disease Prediction using machine learning</h3> </th>
+        <th> <h3 id=>Project 2: Event Scheduler Management System</h3> </th>
+        </tr>
+
+        <tr>
+        <td>
+        <p id="asdf">Developed HeartGuard Pro, an innovative heart disease prediction model using
+        advanced linear regression for heightened accuracy</p></td>
+        <td><p id="asdf">Proficient in event scheduling and coordination within the EventMaster team, 
+          utilizing advanced software tools for precise planning and executio</p></td>
+        </tr>
+
+        <tr>
+            <td id="asdf">Applied cutting-edge approaches to elevate project outcomes, demonstrating a
+                commitment to pushing the boundaries of conventional methods in cardiovascular
+                health prediction</td>
+            <td id="asdf">Applied expertise in managing events with precision, overseeing timelines, and
+                coordinating logistics to consistently meet or exceed client expectations</td>
+        </tr>
+
+        <tr>
+            <td>- Collaborated seamlessly, effectively communicating project results and insights, contributing significantly to the field of cardiovascular hea</td>
+            <td>Utilized advanced software tools effectively, showcasing problem-solving skills and
+            maintaining adaptability for seamless event outcomes and participant experien</td>
+        </tr>
+    </table>
+    </div>
+    
+<hr>
+
+    <div id="experience">
+        <h2>Experience</h2>
+        
+        <h3>Software Engineer Intern (feb 2024 - present)</h3>
+        <h4>Company : BPS Pvt. lmd.</h4>
+        <ol>
+        <li>Developed captivating user interfaces using HTML, CSS, and JavaScript to enhance
+            user engagement and satisfaction.</li> <li>Engineered scalable back-end systems with Django REST Framework and Python, ensuring efficient performance for modern web applications.</li> <li> Collaborated with cross-functional teams to deliver solutions aligned with
+            organizational objectives, translating project requirements into technical specifications.</li> <li> rigorous testing and implemented innovative approaches to improve web
+            application quality, maintaining flawless functionality and exceeding client
+            expectations.</li></ol>
+        
+        <h3>AI Intern (may 2019-june 2022)</h3>
+        <h4>Company : Robotics</h4>
+        <ol><p><li>Led creation of cutting-edge algorithms and machine learning models, optimizing
+            autonomous navigation and object recognition using TensorFlow and PyTorch.</li><li> Applied expertise in managing events with precision, overseeing timelines, and coordinating logistics to consistently meet or exceed client expectations.</li> <li> Utilized advanced software tools effectively, showcasing problem-solving skills and maintaining adaptability for seamless event outcomes and participant experience</li></p></ol>
+    </div>
+    <hr>
+    
+    <div id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: mdfaiskhan@gmail.com</p>
+        <p>Phone: +91-8618331688</p>
+        <p>Address: #392, 3rd cross, Jp Nagar 7th phase, Bengaluru-560076</p>
+        <button><a href="https://www.google.com/maps/place/Faisal+home/@12.8900053,77.5874753,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae1528ec480561:0x92f728d2b719a2e3!8m2!3d12.8900001!4d77.5900502!16s%2Fg%2F11t9bpnw94?entry=ttu">Click here for Location</a></button>
+    </div><hr>
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <alert>Thank you </alert>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname"><br><br>
+        <p>Choose Your Gender?</p>
+        <input type="radio" id="radio" name="radio">
+        <label for="radio">Male</label><br>
+        <input type="radio" id="female" name="female">
+        <label for="female">female</label><br>
+        <input type="radio" id="gay" name="gay">
+        <label for="gay">others</label><br><br>
+        
+        <button type="button" >submit</button>
+      </form>
+   <center><footer><h1>Thank you</h1> </footer></center> 
+
+
+    <script>
+        function scrollToAbout() {
+            document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
+        }
+        
+        function scrollToProjects() {
+            document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
+        }
+        
+        function scrollToContact() {
+            document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+        }
+        function scrollToexperience() {
+            document.getElementById('experience').scrollIntoView({ behavior: 'smooth' });
+        }
+        function scrollToskills() {
+            document.getElementById('skills').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,62 @@
+.body{
+    background-color: rgb(5, 5, 93)violet;
+    color: #b92e8d;
+}
+.hghg{
+    background-color: blueviolet;
+
+}
+h2.hghg{
+    color: blue;
+}
+.abcd{
+    background-color: bisque;
+}
+#qwerty{
+    background-color: cadetblue;
+    width: 120px;
+    grid: 100px;   
+}
+#p1{
+    background-color: cornflowerblue;
+}
+#experience{
+    background-color: chocolate;
+    background-image: url(tenule\,png.avif);
+    
+}
+ body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            background-color: #b92e8d;
+            color: #d5204d;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
