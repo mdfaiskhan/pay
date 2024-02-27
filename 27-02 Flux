@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+        }
+        .container{
+            background-color: darkslategray;
+            height: 50px;
+            width: 10%;
+        }
+        .container2{
+            background-color: darkslategray;
+           
+            width: 10%;
+        }
+        .container6{
+            background-color: darkslategray;
+            height: 50px;
+            width: 10%;
+            
+        }
+        .full{
+            background-color: lightblue;
+            height: 50px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: start;
+        }
+        .full2{
+            background-color: lightcoral;
+            height: 200px;
+            display: flex;
+            
+
+        }
+        .b1{
+            background-color: darkcyan;
+            height: 200px;
+            width: 50%;
+            flex: 10px 5px;
+            display: flex;
+            gap: 10px 5px;
+            flex-wrap: wrap;
+
+        }
+        .b2{
+            background-color: darkgoldenrod; 
+            width: 50%;
+            display: flex;
+            align-items: stretch;
+            justify-content: space-evenly;
+
+        }
+        
+        .full3{
+            background-color: lightgreen;
+            height: 200px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-evenly;
+        }
+        .full4{
+            background-color: lightpink;
+            height: 200px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .a1{
+            background-color: black;
+        }
+       
+    </style>
+</head>
+<body >
+    <div class="full">
+        <div class="container">a1</div> 
+        <div class="container">a2</div> 
+        <div class="container" >a2</div> 
+        <div class="container">a3</div>
+        <div class="container">a4</div>
+    </div>
+    <div class="full2">
+        <div class="b1">
+            <div class="container">b11</div>
+            <div class="container">b12</div>
+            <div class="container">b13</div>
+            <div class="container">b14</div>
+            <div class="container">b15</div>
+            <div class="container">b16</div>
+            <div class="container">b16</div>
+            <div class="container">b11</div>
+            <div class="container">b12</div>
+            <div class="container">b13</div>
+            <div class="container">b14</div>
+            <div class="container">b15</div>
+            <div class="container">b16</div>
+            <div class="container">b16</div>
+            <div class="container">b14</div>
+            <div class="container">b15</div>
+            <div class="container">b16</div>
+            <div class="container">b16</div>
+        </div>
+        <div class="b2">
+           <div class="container2">b21</div>
+           <div class="container2">b22</div>
+           <div class="container2">b23</div>
+           <div class="container2">b24</div>
+        </div>
+    </div>
+    <div class="full3">
+        <div class="container">3.1</div>
+        <div class="container">3.2</div>
+        <div class="container">3.3</div>
+        <div class="container">3.4</div>
+        <div class="container">3.5</div>
+        <div class="container">3.6</div>
+    </div>
+    <div class="full4">
+        <div class="container">4.1</div>
+        <div class="container6">4.2</div>
+        <div class="container">4.3</div>
+        <div class="container6">4.4</div>
+        <div class="container">4.5</div>
+        <div class="container6">4.6</div>
+    </div>
+</body>
+</html> 
