@@ -1,0 +1,76 @@
+/* .first1{
+ background-color: aqua;   
+} */
+*{
+    margin: 0%;
+    padding: 0% ;
+}
+.first{
+    background-image: url(background.jpg);
+    width: 100%;
+}
+.first1{
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-between;
+}
+.first01{
+
+    display: flex;
+    align-self: flex-start;
+    flex-direction: row;
+    justify-content: start;
+        
+        width: 50px; 
+        height: 50px; 
+        background-image: url('rabbit.ico');
+        background-size: cover; 
+} 
+
+ .first03{
+    width: 20;
+    display: flex;
+    align-items: center;
+    
+}
+.first02{
+    width: 70%;
+    display: flex;
+    /* flex-direction: row;
+    justify-content: space-evenly; */
+}
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    height: 60px;
+    
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 23px;
+}
+nav ul li a{
+   text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{
+   font-size: 1.05rem;
+    color: rgb(92, 92, 142);
+    font-size: 1.01rem;
+
+}
+@media screen and (600px < width <= 800px){
+    .first1{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+
