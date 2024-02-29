@@ -1,0 +1,221 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+.first {
+  width: 100%;
+  height: 765px;
+  background-image: url("banner2.jpg");
+  background-repeat: no-repeat;
+}
+@media (max-width: 768px) {
+  .first {
+    height: 400px;
+  }
+}
+
+.first-top {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.first-top-left {
+  width: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+.first-top-left .image-1 {
+  width: 100px;
+  height: 100px;
+  background-image: url("rabbit.ico");
+  -o-border-image: auto;
+     border-image: auto;
+  background-size: cover;
+}
+
+.first-top-center {
+  display: flex;
+  width: 70%;
+}
+.first-top-center nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+}
+.first-top-center nav ul {
+  display: flex;
+  justify-content: center;
+}
+.first-top-center nav ul li {
+  list-style: none;
+  margin: 0 23px;
+}
+.first-top-center nav ul li a {
+  text-decoration: none;
+  color: rgb(22, 19, 19);
+}
+.first-top-center nav ul li a:hover {
+  font-size: 1.05rem;
+  border: 10px;
+  background-color: #F64648;
+  color: rgb(46, 46, 179);
+  font-size: 1.01rem;
+}
+
+.first-top-center-elements {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.first-top-right {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.first-top-right .first-top-right-blank {
+  flex-grow: 1;
+}
+.first-top-right .first-top-right-search {
+  flex-grow: 1;
+}
+
+.first-bottom {
+  margin-left: 150px;
+}
+.first-bottom .font1 {
+  font-size: 30px;
+}
+.first-bottom .font2 {
+  font-style: oblique;
+  font-size: 60px;
+}
+.first-bottom .font3 {
+  font-size: 20px;
+}
+.first-bottom .button-1 {
+  margin-left: 10px;
+  border-radius: 20px;
+  background-color: #F64648;
+  border: none;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 16px;
+}
+.first-bottom .button-1:hover {
+  background-color: black;
+}
+
+.second {
+  height: 765px;
+  width: 100%;
+}
+.second .second-top {
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  height: auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  gap: 40px;
+}
+.second .second-top .second-top-2 {
+  height: 150px;
+  width: 150px;
+  background-image: url(paypal.png);
+  -o-border-image: 100px;
+     border-image: 100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.second .second-top .second-top-3 {
+  height: 150px;
+  width: 150px;
+  -o-border-image: 100px;
+     border-image: 100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(google.png);
+}
+.second .second-top .second-top-4 {
+  height: 150px;
+  width: 150px;
+  -o-border-image: 100px;
+     border-image: 100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(samsung.png);
+}
+.second .second-top .second-top-5 {
+  height: 150px;
+  width: 150px;
+  -o-border-image: 100px;
+     border-image: 100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(lenovo.png);
+}
+.second .second-top .second-top-6 {
+  height: 150px;
+  width: 150px;
+  -o-border-image: 100px;
+     border-image: 100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(amazon.png);
+}
+
+.second-bottom {
+  height: 615px;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(4, auto);
+  gap: 20px;
+}
+.second-bottom .second-bottom-1 {
+  grid-row: 1/5;
+  grid-column: 1;
+  align-items: center;
+  justify-content: center;
+}
+.second-bottom .second-bottom-1 h1 {
+  font-size: 100px;
+}
+.second-bottom .second-bottom-1 p {
+  font-size: 20px;
+}
+.second-bottom .second-bottom-6 {
+  grid-row: 2;
+  grid-column: 2/5;
+}
+.second-bottom .second-bottom-6 .second-bottom-text2 {
+  align-items: center;
+}
+.second-bottom .second-bottom-2 {
+  grid-row: 1;
+  grid-column: 2/5;
+}
+.second-bottom .second-bottom-3 {
+  grid-row: 3/5;
+  grid-column: 2;
+  background-color: #3f0203;
+}
+.second-bottom .second-bottom-4 {
+  grid-row: 3/5;
+  grid-column: 3;
+  background-color: #331919;
+}
+.second-bottom .second-bottom-5 {
+  grid-row: 3/5;
+  grid-column: 4;
+  background-color: #443d3d;
+}/*# sourceMappingURL=portfolio.css.map */
