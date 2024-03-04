@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Line Example</title>
+   <style>
+    .container {
+    position: relative; /* Ensure proper positioning of the vertical line */
+    width: 100%; /* Set the width of the container */
+    height: 100vh; /* Set the height of the container */
+}
+
+.vertical-line {
+    position: absolute; /* Position the vertical line absolutely */
+    left: 50%; /* Position the line in the middle horizontally */
+    top: 0; /* Align the line with the top of the container */
+    height: 100%; /* Make the line span the full height of the container */
+    width: 2px; /* Width of the line */
+    background-color: #000000; /* Color of the line */
+}
+
+.circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30px; /* Diameter of the circle */
+    height: 30px; /* Diameter of the circle */
+    background-color: transparent; /* Transparent color for circle */
+    border-radius: 50%; /* Make the circle round */
+    border: 2px solid #000000; /* Border for the circle */
+    transform: translate(-50%, -50%); /* Center the circle */
+}
+
+/* Style for the left half of the circle */
+.circle::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-color: #000000; /* Color of the left half */
+    border-radius: 50%; /* Make it a circle */
+    left: -50%;
+    top: 0;
+}
+
+/* Style for the right half of the circle */
+.circle::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-color: #000000; /* Color of the right half */
+    border-radius: 50%; /* Make it a circle */
+    right: -50%;
+    top: 0;
+}
+   </style>
+</head>
+<body>
+    <div class="container">
+        <div class="vertical-line"></div> <!-- Vertical line -->
+        <div class="circle"></div> <!-- Circle 1 -->
+    </div>
+</body>
+</html>
