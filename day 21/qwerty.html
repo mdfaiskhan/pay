@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Library</title>
+    <link rel="stylesheet" href="qwerty.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Book Library</h1>
+        <form id="bookForm">
+            <input type="text" id="title" placeholder="Title" required>
+            <input type="text" id="author" placeholder="Author" required>
+            <input type="number" id="pages" placeholder="Pages" required>
+            <button type="submit">Add Book</button>
+        </form>
+        <ul id="bookList"></ul>
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Edit Book</h2>
+            <form id="editForm">
+                <input type="text" id="editTitle" required>
+                <input type="text" id="editAuthor" required>
+                <input type="number" id="editPages" required>
+                <button type="submit">Save Changes</button>
+            </form>
+        </div>
+    </div>
+    <script src="qwerty.js"></script>
+</body>
+</html>

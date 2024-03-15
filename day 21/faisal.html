@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="faisal.css">
+    <title>CRUD Operations</title>
+</head>
+<body>
+    <div class="container">
+    <strong ><h1>CRUD Operations</h1></strong>
+ 
+      <div class="top">
+         <form id="form">
+            <div> 
+            <label for="name">Enter Your Name:</label>
+            <input type="text" id="name"></div>
+            <div> 
+                <label for="email">Enter Your email:</label>
+                <input type="text" id="email"></div>
+                <div> 
+                    <label for="phone">Enter Your phone:</label>
+                    <input type="text" id="phone"></div>
+                    <div> 
+                        <label for="address">Enter Your address:</label>
+                        <input type="text" id="address"></div>
+                        <div> 
+                            <label for="pincode">Enter Your pincode:</label>
+                            <input type="text" id="pincode"></div>
+            <br> <br>
+            <button type="button" onclick="submitForm()">Submit</button>
+         </form>
+      </div>
+      <div class="bottom">
+        <table border="3" id="dataTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone_number</th>
+                    <th>Address</th>
+                    <th>Pincode</th>
+                    <th>Changes</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+            </tbody>
+        </table>
+      </div>
+    </div>
+
+<script>
+    let data = []; // Array to store data
+
+    // Function to submit the form data
+    function submitForm() {
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const phone = document.getElementById("phone").value;
+        const address = document.getElementById("address").value;
+        const pincode = document.getElementById("pincode").value;
+
+        // Create a new data object
+        const newData = {
+            name: name,
+            email: email,
+            phone: phone,
+            address: address,
+            pincode: pincode
+        };
+
+        // Add new data to the array
+        data.push(newData);
+
+        // Render the table with updated data
+        renderTable();
+    }
+
+    // Function to render the table with data
+    function renderTable() {
+        const tableBody = document.getElementById("tableBody");
+        tableBody.innerHTML = ""; // Clear previous table data
+
+        data.forEach(item => {
+            const row = document.createElement("tr");
+            row.innerHTML = `
+                <td>${item.name}</td>
+                <td>${item.email}</td>
+                <td>${item.phone}</td>
+                <td>${item.address}</td>
+                <td>${item.pincode}</td>
+                <td><button onclick="editData('${item.email}')">Edit</button><button onclick="deleteData('${item.email}')">Delete</button></td>
+            `;
+            tableBody.appendChild(row);
+        });
+    }
+
+    // Function to edit data
+    function editData(email) {
+        const newData = prompt("Enter new data (name, email, phone, address, pincode) separated by commas:");
+        if (newData) {
+            const newDataArr = newData.split(",");
+            const index = data.findIndex(item => item.email === email);
+            if (index !== -1) {
+                data[index] = {
+                    name: newDataArr[0],
+                    email: newDataArr[1],
+                    phone: newDataArr[2],
+                    address: newDataArr[3],
+                    pincode: newDataArr[4]
+                };
+                renderTable();
+            } else {
+                alert("Data not found!");
+            }
+        }
+    }
+
+    // Function to delete data
+    function deleteData(email) {
+        const confirmed = confirm("Are you sure you want to delete this data?");
+        if (confirmed) {
+            data = data.filter(item => item.email !== email);
+            renderTable();
+        }
+    }
+</script>
+
+</body>
+</html>
